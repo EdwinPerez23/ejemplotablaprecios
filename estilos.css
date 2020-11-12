@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightgrey;
+    font-family: "open sans";
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tabla {
+    width: 33%;
+    height: 550px;
+    margin: auto;
+    border: 1px solid blue;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px cadetblue;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: darkblue;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 53px;
+}
+
+img {
+    width: 64px;
+    margin-bottom: 35px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+p {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.boton {
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background: greenyellow;
+    text-decoration: none;
+    color: darkblue;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.tabla:hover {
+    background: #343759;
+    color: white;
+    transition: 0.5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+a:hover {
+    color: red;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .tabla {
+        width: 45%;
+        max-width: none;
+        margin-bottom: 40px;
+        flex-grow: initial;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tabla {
+        width: 45%;
+        padding: 30px;
+    }
+
+    h2 {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .tabla {
+        width: 85%;
+        padding: 20px;
+    }
+}
